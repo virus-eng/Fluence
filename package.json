@@ -1,0 +1,17 @@
+{
+  "name": "fluence",
+  "version": "1.0.0",
+  "description": "A GUI based UI builder",
+  "license": "ISC",
+  "author": "Kunal Mishra",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.3.0"
+  }
+}
