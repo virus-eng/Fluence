@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 import user_data from './../models/user_data.js';
 import auth_gen from './../utility/auth_gen.js';
 
-const db = await mongoose.connect('mongodb://localhost:27017/fluence');
+// const db = await mongoose.connect('mongodb://localhost:27017/fluence');
 router.post('/', async (req, res)=>{
     let search_username_response = await user_data.findOne({"username" : req.body.username}).lean();
     let search_email_response = await user_data.findOne({"email" : req.body.email}).lean();

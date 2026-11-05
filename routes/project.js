@@ -2,7 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import user_data from './../models/user_data.js';
 const router = express.Router();
-const db = await mongoose.connect('mongodb://localhost:27017/fluence');
+// const db = await mongoose.connect('mongodb://localhost:27017/fluence');
 
 let keyframes = {
     keyframe_name_validation(name){

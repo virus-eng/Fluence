@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 import user_data from './../models/user_data.js';
 import auth_gen from './../utility/auth_gen.js';
 
-const db = await mongoose.connect('mongodb://localhost:27017/fluence');  // Locally hosted database
+// const db = await mongoose.connect('mongodb://localhost:27017/fluence');  // Locally hosted database
 
 async function user_validation(obj){
     let response = await user_data.findOne({"username" : obj.username}).lean();
