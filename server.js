@@ -1,6 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import'dotnet/config';
+import'dotenv/config';
 const app = express();
 const port = 3000;
 const __dirname__ = import.meta.dirname;
