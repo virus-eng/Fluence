@@ -15,8 +15,6 @@ let keyframes = {
     }
 }
 
-let projects = await user_data.find({"username" : {$exists : true}}).select("projects").lean();
-
 router.use(async (req, res, next) => {
     let response = await user_data.findOne({"username" : req.body["created_by"], "auth" : req.body.auth}).lean();
     if(response == null) res.send(-1);
